@@ -8,8 +8,44 @@
   </head>
 
   <body>
-    <p>Welcome to my first webpage!</p>
-
-    <!-- Add more HTML here! -->
+    <h1 id="main-title">grilled cheese</h1>
+    <h5>a recipe for a skillet-fried cheese sandwhich</h2>
+    <p><i>By: Jasmine</i></p>
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcravinghomecooked.com%2Fwp-content%2Fuploads%2F2023%2F07%2Fgrilled-cheese-1-13.jpg&f=1&nofb=1&ipt=47ea51286dc7fb0fb6bdf25d5f5919957ea00db1ffd238869af7084226305178" alt="grilled cheese stack">
+    <h3>Ingredients:</h3>
+    <script>
+      function toggleLineThrough(labelId) {
+        const label = document.getElementById(labelId);
+        if (label.style.textDecoration === 'line-through') {
+          label.style.textDecoration = 'none';
+        } else {
+          label.style.textDecoration = 'line-through';
+        }
+      }
+    </script>
+    <form>
+      <input type="checkbox" onclick="toggleLineThrough('label1');" /> <label id="label1">3 teaspoons of pepper</label>
+      <br>
+      <input type="checkbox" onclick="toggleLineThrough('label2');" /> <label id="label2">2 slices of bread</label>
+      <br>
+      <input type="checkbox" onclick="toggleLineThrough('label3');" /> <label id="label3">2 slices of cheese</label>
+      <br>
+      <input type="checkbox" onclick="toggleLineThrough('label4');" /> <label id="label4">2 tablespoons of ham <i>(optional)</i></label>
+      <br>
+      <input type="checkbox" onclick="toggleLineThrough('label5');" /> <label id="label5">1 moderate spoonful of mayonaise</label>
+      <br>
+    </form>
+    <h3>Instructions:</h3>
+    <ol>
+      <li>Spread mayonaise on one side of each slice of bread.</li>
+      <li>Place one slice of cheese on the un-mayonaised side of one slice of bread.</li>
+      <li>If you are using ham, place the ham on top of the cheese.</li>
+      <li>Place the second slice of cheese on top of the ham or first slice of cheese.</li>
+      <li>Place the second slice of bread on top, mayonaise side up.</li>
+      <li>Heat a skillet over medium heat.</li>
+      <li>Place the sandwich in the skillet and cook until the bottom slice of bread is golden brown, about 3-4 minutes.</li>
+      <li>Carefully flip the sandwich and cook until the other side is golden brown and the cheese is melted, about another 3-4 minutes.</li>
+      <li>Remove from skillet, let cool for a minute, then slice and serve.</li>
+    </ol>
   </body>
 </html>
